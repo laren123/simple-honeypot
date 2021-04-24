@@ -16,9 +16,9 @@ And the connector.py can be used to test the honeypot servers.
 +Returns the Time of the incident
 
 ##LIMITATIONS:
-+Data will be lost when the program close
++Data will be lost when it close
 +No log
-+Program should the Forcefully stopped
++It should be Forcefully stopped
 
 
 ##PLEASE SUPPORT THE PROJECT BY CONTRIBUTING YOUR CODE!!
