@@ -1,10 +1,10 @@
-import threading
+import threading    #IMPORTS
 import socket
 import datetime
 
-host='localhost'
+host='localhost'    #EDIT THIS TO CHANGE THE HOST
 
-def ftp_server():
+def ftp_server():   #FTP SERVER
     global ftp
     while True:
         data,ip=ftp.accept()
@@ -13,7 +13,7 @@ def ftp_server():
         print (time)
         print ()
 
-def ssh_server():
+def ssh_server():   #SSH SERVER
     global ssh
     while True:
         data,ip=ssh.accept()
@@ -22,7 +22,7 @@ def ssh_server():
         print (time)
         print ()
 
-def http_proxy():
+def http_proxy():   #HTTP PROXY SERVER
     global http
     while True:
         data,ip=http.accept()
@@ -47,7 +47,7 @@ ftp.listen()
 ssh.listen()
 http.listen()
 
-ftp_=threading.Thread(target=ftp_server)
+ftp_=threading.Thread(target=ftp_server)    #THREADING
 ssh_=threading.Thread(target=ssh_server)
 http_=threading.Thread(target=http_proxy)
 
