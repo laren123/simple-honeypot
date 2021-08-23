@@ -1,6 +1,7 @@
 # simple-honeypot
 Simple Honeypot written in Python
 Currently only SSH,FTP and Http proxy servers are enabled.
+Tested on GNU/Linux.
 
 Currently host is set to 'localhost' and can be changed as per the user's need.
 (line 5)
